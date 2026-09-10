@@ -1,5 +1,7 @@
+import handler from "vinext/server/fetch-handler";
+
 export default {
-  async fetch(request: Request): Promise<Response> {
-    return new Response(null, { status: 404 });
+  fetch(request: Request, env: Record<string, unknown>, ctx: ExecutionContext) {
+    return handler.fetch(request, env, ctx);
   },
 };
