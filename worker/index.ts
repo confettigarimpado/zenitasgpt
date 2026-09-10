@@ -1,1 +1,5 @@
-export default {\n  async fetch(request: Request): Promise<Response> {\n    return new Response(null, { status: 404 });\n  },\n};\n
+export default {
+  async fetch(request: Request): Promise<Response> {
+    return new Response(null, { status: 404 });
+  },
+};
