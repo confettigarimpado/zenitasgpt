@@ -1,4 +1,4 @@
-import handler from "vinext/server/fetch-handler";
+import handler from "vinext/server/app-router-entry";
 
 export default {
   fetch(request: Request, env: Record<string, unknown>, ctx: ExecutionContext) {
